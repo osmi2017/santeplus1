@@ -1,0 +1,30 @@
+{
+  "cli": {
+    "version": ">= 13.4.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "NODE_VERSION": "18.x"  
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "NODE_VERSION": "18.x" 
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "NODE_VERSION": "18.x"  
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
